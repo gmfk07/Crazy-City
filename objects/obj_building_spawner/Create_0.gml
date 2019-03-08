@@ -1,5 +1,5 @@
 randomize();
-alarmTime = 2; //room_speed * 0.2;
+alarmTime = 8; // room_speed * 2;
 alarm_set(0, alarmTime);
 buildingLocations = []; // True wherever a building is present, false otherwise
 for (var yIndex = 0; yIndex < room_height div GRID_SIZE; yIndex++;) {
@@ -7,5 +7,5 @@ for (var yIndex = 0; yIndex < room_height div GRID_SIZE; yIndex++;) {
 		buildingLocations[yIndex, xIndex] = false;
 	}
 }
-generate_building(buildingLocations);
-generate_building(buildingLocations);
+generate_building();
+generate_building();

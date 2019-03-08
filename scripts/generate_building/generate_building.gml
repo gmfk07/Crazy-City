@@ -17,7 +17,7 @@ if (coinFlip < 3) {
 	var playerY = player.y_gridpos;
 	occupiedLocations[playerY, playerX] = true;
 	
-	// Mark adjacent to buildings as occupied
+	// Mark squares adjacent to buildings as occupied
 	for (var yIndex = 0; yIndex < array_height_2d(occupiedLocations); yIndex++;) {
 		for (var xIndex = 0; xIndex < array_length_2d(occupiedLocations, yIndex); xIndex++;) {
 			if (buildingSpawner.buildingLocations[yIndex, xIndex] == true) {
@@ -47,6 +47,11 @@ if (coinFlip < 3) {
 				}
 			}
 		}
+	}
+	
+	// Mark roads as occupied
+	with (obj_road) {
+		occupiedLocations[grid_y, grid_x] = true;
 	}
 	
 	var newBuildingLocation = new_unoccupied_location(occupiedLocations);
