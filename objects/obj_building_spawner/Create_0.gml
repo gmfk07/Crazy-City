@@ -1,5 +1,5 @@
 randomize();
-alarmTime = room_speed * 5;
+alarmTime = 2; //room_speed * 0.2;
 alarm_set(0, alarmTime);
 buildingLocations = []; // True wherever a building is present, false otherwise
 for (var yIndex = 0; yIndex < room_height div GRID_SIZE; yIndex++;) {

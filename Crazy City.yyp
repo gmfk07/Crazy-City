@@ -77,6 +77,25 @@
             }
         },
         {
+            "Key": "12a195be-c119-42fa-af6a-5fb50c5dbf4e",
+            "Value": {
+                "id": "0d9ca854-90a6-43e8-80db-bc1e92b5a4ee",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_civilian\/obj_civilian.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f2ff9ff-daad-4035-b718-53449570a907",
             "Value": {
                 "id": "3062e5d7-9ece-4b63-8f8d-7301821ba2f6",
@@ -191,6 +210,25 @@
             }
         },
         {
+            "Key": "42c6e4dd-0650-404c-8140-1055d2a96fe0",
+            "Value": {
+                "id": "c7cb4c45-36e9-484e-a37a-eccc67293e81",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_civilian\/spr_civilian.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a172cbf-b539-4aad-a781-9f66908c922b",
             "Value": {
                 "id": "59e3becb-b614-4bb8-91ae-be720da2ec2c",
@@ -226,6 +264,25 @@
                 ],
                 "resourcePath": "views\/66250a9b-2b4f-4bdd-8330-2b80ab41fd1c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "67979051-271c-4095-af77-64fa37647d60",
+            "Value": {
+                "id": "2b335ea6-c177-46db-bb60-86933297fb27",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/get_random_building_pair\/get_random_building_pair.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -419,6 +476,25 @@
             }
         },
         {
+            "Key": "a70fce1c-8648-4a8c-b16b-1e733e4d7476",
+            "Value": {
+                "id": "e21cab5f-f578-4d01-bb29-1583ca2596aa",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_civilian_spawner\/obj_civilian_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "4495238d-8c37-4eca-9a5e-930beda3d712",
@@ -473,6 +549,25 @@
                 ],
                 "resourcePath": "views\/af4b96ee-1238-49bc-bfba-9a02c79d4c3b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b9a5821a-12a4-4e94-9dbe-97dd4281084b",
+            "Value": {
+                "id": "3b0bc881-2877-4c39-93d5-e4effe7fa500",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/generate_civilian\/generate_civilian.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -671,7 +766,9 @@
         "2ad7f7be-9c17-4e67-a4ef-5481813eb461",
         "40ae4383-f7a0-4b75-a87d-c013e86a588d",
         "f5f7040f-5d80-41ca-a1d0-f2026ab3c6db",
-        "e6a61811-a858-4e39-8b66-f39757961adf"
+        "e6a61811-a858-4e39-8b66-f39757961adf",
+        "67979051-271c-4095-af77-64fa37647d60",
+        "b9a5821a-12a4-4e94-9dbe-97dd4281084b"
     ],
     "tutorial": ""
 }

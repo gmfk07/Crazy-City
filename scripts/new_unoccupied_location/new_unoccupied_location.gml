@@ -16,9 +16,7 @@ if (unoccupiedCount == 0) {
 	return [-1,-1];
 }
 
-// show_debug_message("Found " + string(unoccupiedCount) + " unoccupied locations.");
-
-var randomCount = irandom(unoccupiedCount);
+var randomCount = irandom(unoccupiedCount - 1) + 1;
 for (var yIndex = 0; yIndex < array_height_2d(occupiedArray); yIndex++;) {
 	for (var xIndex = 0; xIndex < array_length_2d(occupiedArray, yIndex); xIndex++;) {
 		if (occupiedArray[yIndex, xIndex] == false) {
@@ -30,6 +28,6 @@ for (var yIndex = 0; yIndex < array_height_2d(occupiedArray); yIndex++;) {
 	}
 }
 
-// This is to catch bugs resulting from bad code in above loop. Should not be called.
-show_debug_message("Somehow did not get unoccupied location properly.");
+// This is to catch bugs resulting from bad code in above loop.
+show_debug_message("Somehow did not get unoccupied location properly. If this message is printed, debugging is needed.");
 return [-1,-1];
