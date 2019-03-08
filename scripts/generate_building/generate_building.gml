@@ -59,7 +59,6 @@ if (coinFlip < 3) {
 	var newY = newBuildingLocation[1];
 	
 	if (newX < 0 or newY < 0) {
-		show_debug_message("Failed to find suitable building location.");
 		return false;
 	}
 	
@@ -68,7 +67,6 @@ if (coinFlip < 3) {
 		set_gridpos(newX, newY);
 	}
 	buildingSpawner.buildingLocations[newY, newX] = true;
-	show_debug_message("Placed building at " + string(newX) + "," + string(newY) + ".");
 }
 
 return true;
