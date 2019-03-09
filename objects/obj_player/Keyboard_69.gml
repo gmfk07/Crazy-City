@@ -1,0 +1,1 @@
+explosion(grid_x, grid_y, 3);
