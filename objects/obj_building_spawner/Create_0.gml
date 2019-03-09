@@ -1,3 +1,4 @@
+#macro GRID_SIZE 32
 randomize();
 alarmTime = 8; // room_speed * 2;
 alarm_set(0, alarmTime);
