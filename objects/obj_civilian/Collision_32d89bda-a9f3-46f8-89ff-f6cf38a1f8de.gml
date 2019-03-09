@@ -10,7 +10,3 @@ if (destination[0] == x/GRID_SIZE && destination[1] == y/GRID_SIZE){
 	show_debug_message("Arrived at: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
 	instance_destroy();
 }
-else {
-	show_debug_message("Destination: " + string(destination[0]) + ", " + string(destination[1]));
-	show_debug_message("Traveling: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
-}
