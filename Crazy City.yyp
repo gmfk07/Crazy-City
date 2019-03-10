@@ -58,7 +58,7 @@
             "Key": "193c285a-e067-4565-affe-7506da869c6e",
             "Value": {
                 "id": "af6c586a-34e3-433a-961a-59829ee492ca",
-                "resourcePath": "objects\\obj_commuter_spawner\\obj_commuter_spawner.yy",
+                "resourcePath": "objects\\obj_commuter_spawner_notUsed\\obj_commuter_spawner_notUsed.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "7c5fe851-29a1-4a48-9f54-883ca56e267a",
+            "Value": {
+                "id": "fb1b6b0d-d1ac-4843-98ec-1e81c1231a13",
+                "resourcePath": "scripts\\generate_civilian_commuter\\generate_civilian_commuter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7dffb00a-b923-4db0-b1a7-933ad8106234",
             "Value": {
                 "id": "99b16a8c-afff-40a7-9346-c88f57bec098",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "9ef42fd1-8df2-4ce1-9892-8335d09bd338",
+            "Value": {
+                "id": "0adfee46-f1cb-4c33-8273-9d2b80c8792b",
+                "resourcePath": "objects\\obj_civilian_commuter_spawner\\obj_civilian_commuter_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f5a192d-1430-4a6c-ae38-33aa3ed3a47f",
             "Value": {
                 "id": "b18d5c9d-93fc-44bd-8aef-79365e3af439",
@@ -314,7 +330,7 @@
             "Key": "a70fce1c-8648-4a8c-b16b-1e733e4d7476",
             "Value": {
                 "id": "e21cab5f-f578-4d01-bb29-1583ca2596aa",
-                "resourcePath": "objects\/obj_civilian_spawner\/obj_civilian_spawner.yy",
+                "resourcePath": "objects\\obj_civilian_spawner_notUsed\\obj_civilian_spawner_notUsed.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -362,7 +378,7 @@
             "Key": "b9a5821a-12a4-4e94-9dbe-97dd4281084b",
             "Value": {
                 "id": "3b0bc881-2877-4c39-93d5-e4effe7fa500",
-                "resourcePath": "scripts\/generate_civilian\/generate_civilian.yy",
+                "resourcePath": "scripts\\generate_civilian\\generate_civilian.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -396,6 +412,14 @@
                 "id": "a99244a6-da23-4198-b989-3b8e17be8c7e",
                 "resourcePath": "views\/d1728309-483f-4946-ab5b-db26746928b7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d6c870a0-59f5-48f1-9d6b-29ab092e539b",
+            "Value": {
+                "id": "22a81025-39dd-4f8b-9478-0122ab278c25",
+                "resourcePath": "scripts\\commuter_exists\\commuter_exists.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -482,7 +506,9 @@
         "e79db2f5-1754-4faf-bdd3-7006f54ace23",
         "8e3adafc-f16f-4e68-90c2-ae9e94199770",
         "741fcc7d-65a1-4fdf-904e-c9bfeaa905d2",
-        "b74f0133-9b7f-436e-ae5a-024b0041f543"
+        "b74f0133-9b7f-436e-ae5a-024b0041f543",
+        "7c5fe851-29a1-4a48-9f54-883ca56e267a",
+        "d6c870a0-59f5-48f1-9d6b-29ab092e539b"
     ],
     "tutorial": ""
 }
