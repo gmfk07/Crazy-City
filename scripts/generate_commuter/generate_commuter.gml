@@ -7,10 +7,6 @@ if (!is_array(buildingPair) or array_length_1d(buildingPair) < 2) {
 	return false;
 }
 
-if (!road_exists(buildingPair[0].x_gridpos,buildingPair[0].y_gridpos) or !road_exists(buildingPair[1].x_gridpos,buildingPair[1].y_gridpos)){
-	show_debug_message("Failed to select two buildings, not spawning commuter");
-	return false;
-	}
 var startBuilding = buildingPair[0];
 var startX = startBuilding.x_gridpos;
 var startY = startBuilding.y_gridpos;
@@ -30,7 +26,7 @@ with (newCommuter) {
 	desX = destinationX*GRID_SIZE + 16;
 	desY = destinationY*GRID_SIZE + 16;
 	if mp_grid_define_path(x,y, desX, desY, path){
-		show_debug_message("Yes there is a commuter!")
+		show_debug_message("Yes there is a commuter and it has a path!")
 		image_speed = 1;
 		pos = 1;
 		x_goto = path_get_point_x(path, pos);
@@ -38,7 +34,7 @@ with (newCommuter) {
 	}
 	else{
 		instance_destroy(self)
-		show_debug_message("No path!!!")
+		show_debug_message("No path for the commuter! it is destroyed")
 	}
 	show_debug_message("Destination: " + string(destination[0]) + ", " + string(destination[1]));
 }

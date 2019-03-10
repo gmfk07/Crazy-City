@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var com_speed = 0.5
+
 if point_distance(x, y, x_goto, y_goto) < GRID_SIZE
 {
 pos ++;
@@ -14,18 +14,6 @@ else
     y_goto = path_get_point_y(path, pos); 
     }
 }
-//else{
-//	if abs(x_goto-x)> GRID_SIZE
-//	{
-//		x += GRID_SIZE*sign(x_goto-x)
-//	}
-//	else{
-//	if abs(y_goto-y) > GRID_SIZE
-//		{
-//			y += GRID_SIZE*sign(y_goto-y)
-//		}
-//	}
-//}
 
 if point_distance(x,y,desX,desY) <= GRID_SIZE
 {
