@@ -330,7 +330,7 @@
             "Key": "cfcb1d03-e1ad-44f0-8849-d029f8e776e8",
             "Value": {
                 "id": "4c27c87c-9bbe-4cec-9873-858df1c4326f",
-                "resourcePath": "sprites\\sprite4\\sprite4.yy",
+                "resourcePath": "sprites\\spr_flag\\spr_flag.yy",
                 "resourceType": "GMSprite"
             }
         },
