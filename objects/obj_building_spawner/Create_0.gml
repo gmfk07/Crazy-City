@@ -1,5 +1,10 @@
+#macro GRID_SIZE 32
 randomize();
+<<<<<<< HEAD
 alarmTime = room_speed; // room_speed * 2;
+=======
+alarmTime = room_speed * 3;
+>>>>>>> master
 alarm_set(0, alarmTime);
 buildingLocations = []; // True wherever a building is present, false otherwise
 for (var yIndex = 0; yIndex < room_height div GRID_SIZE; yIndex++;) {

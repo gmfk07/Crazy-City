@@ -1,8 +1,8 @@
 {
-    "id": "6c4dbb1b-f263-4712-993e-a5e5f148e7b6",
+    "id": "50d05520-2db8-47d2-9209-d96dc7baf7e3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "constants",
+    "name": "building_exists",
     "IsCompatibility": false,
     "IsDnD": false
 }

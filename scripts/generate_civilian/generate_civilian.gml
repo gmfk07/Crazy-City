@@ -19,7 +19,6 @@ with (newCivilian) {
 	set_gridpos(startX, startY);
 	destination[0] = destinationX;
 	destination[1] = destinationY;
-	show_debug_message("Destination: " + string(destination[0]) + ", " + string(destination[1]));
 }
 
 show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
