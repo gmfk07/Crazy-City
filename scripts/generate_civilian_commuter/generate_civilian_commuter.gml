@@ -36,6 +36,8 @@ with (newActor) {
 	}
 	else{
 		//no path, a civilian
+		x -= 0.5*GRID_SIZE;
+		y -= 0.5*GRID_SIZE;
 		instance_change(obj_civilian, false);
 		depth = -1;
 		show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
