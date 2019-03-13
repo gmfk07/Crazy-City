@@ -1,4 +1,10 @@
 #macro GRID_SIZE 32
+
+#macro RAGE_MAX 100
+#macro RAGE_PER_SECOND 2
+
+global.rage = 0;
+
 randomize();
 alarmTime = room_speed * 6;
 alarm_set(0, alarmTime);

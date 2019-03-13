@@ -31,7 +31,7 @@ with (newActor) {
 		if (choose(1,2,3,4) == 1 or instance_number(obj_civilian) == 0) {
 			x -= 0.5*GRID_SIZE;
 			y -= 0.5*GRID_SIZE;
-			instance_change(obj_civilian, false);
+			instance_change(obj_civilian, true);
 			depth = -1;
 			show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
 			show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));	
@@ -48,7 +48,7 @@ with (newActor) {
 		//no path, a civilian
 		x -= 0.5*GRID_SIZE;
 		y -= 0.5*GRID_SIZE;
-		instance_change(obj_civilian, false);
+		instance_change(obj_civilian, true);
 		depth = -1;
 		show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
 		show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));
