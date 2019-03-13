@@ -381,6 +381,25 @@
             }
         },
         {
+            "Key": "53814d64-9883-45fa-9649-e8ccd093da18",
+            "Value": {
+                "id": "bc5c0948-1541-474a-9975-4dbe5a66b915",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/snd_crazy_city\/snd_crazy_city.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5a172cbf-b539-4aad-a781-9f66908c922b",
             "Value": {
                 "id": "59e3becb-b614-4bb8-91ae-be720da2ec2c",
