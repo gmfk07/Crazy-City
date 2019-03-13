@@ -3,3 +3,8 @@ if (can_place_road(grid_x-1, grid_y) && !commuter_exists(grid_x-1, grid_y) && !b
 		move_gridpos(-1, 0, 6);
 	else if (road_mode)
 		move_gridpos(-1, 0, 3);
+		
+if (road_mode)
+	sprite_index = spr_player_road_left;
+else
+	sprite_index = spr_player_left;
