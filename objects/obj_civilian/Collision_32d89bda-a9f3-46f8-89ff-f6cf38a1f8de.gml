@@ -12,6 +12,9 @@ if (abs(destination[0] - x/GRID_SIZE) + abs(destination[1] - y/GRID_SIZE) <= 1){
 	obj_player.num_passengers = 0;
 	instance_destroy(obj_flag); // destroys all flags - may become an issue with multiple passengers
 	instance_destroy();
+	if (instance_number(obj_civilian) == 0) { // If out of civilians, make more
+		generate_civilian_commuter();
+	}
 }
 /*else {
 	show_debug_message("Destination: " + string(destination[0]) + ", " + string(destination[1]));
