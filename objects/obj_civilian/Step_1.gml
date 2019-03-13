@@ -23,4 +23,3 @@ if (obj_player.num_passengers == 0) {
 	
 	}
 }
-
