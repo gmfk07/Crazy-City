@@ -11,6 +11,9 @@ if (anger >= seething_threshold)
 }
 if (anger >= 1)
 {
+	show_debug_message("EXPLODE: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
+	obj_player.num_passengers = 0;
+	instance_destroy(obj_flag);
 	instance_destroy();
 	explosion(round(x/GRID_SIZE), round(y/GRID_SIZE), 3);
 }
