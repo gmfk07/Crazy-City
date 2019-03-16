@@ -11,12 +11,15 @@ for (var i=0; i<room_width/GRID_SIZE; i++)
 		{
 			with (obj_road)
 			{
-				if (grid_x == i && grid_y == j)
-					if !commuter_exists(x,y)
-					//if there is a commuter on the path, do not destroy the road
+				if (grid_x == i && grid_y == j){
+					if commuter_exists(grid_x,grid_y)
+					//if there is a commuter on the path, destroy the commuter
 					{
-					instance_change(obj_rock,false);		
+						show_debug_message("A commuter should be destroyed");
+						instance_destroy(instance_nearest(x,y,obj_commuter));
 					}
+					instance_change(obj_rock,false);
+				}
 			}
 		}
 	}
