@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_road",
     "eventList": [
-        
+        {
+            "id": "ac0dac20-39d4-4571-95b0-9d8e350f17f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "d6cbeae2-639e-40e8-9440-ac8ca7534826"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

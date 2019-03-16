@@ -11,9 +11,32 @@ for (var i=0; i<room_width/GRID_SIZE; i++)
 		{
 			with (obj_road)
 			{
-				if (grid_x == i && grid_y == j)
-					instance_destroy();
+				if (grid_x == i && grid_y == j){
+					if commuter_exists(grid_x,grid_y)
+					//if there is a commuter on the path, destroy the commuter
+					{
+						show_debug_message("A commuter should be destroyed");
+						instance_destroy(instance_nearest(x,y,obj_commuter));
+					}
+					instance_change(obj_rock,false);
+				}
 			}
 		}
+	}
+}
+
+mp_grid_add_instances(global.ai_grid,obj_rock,false);
+//rebuild all path for commuters
+with(obj_commuter)
+{	
+	//restart the path from the current position
+	pos = 0;
+	if mp_grid_define_path(x,y,desX,desY,path)
+	{
+		show_debug_message("A new path towards the destination");
+	}
+	else
+	{
+		show_debug_message("No path to the destination now");
 	}
 }
