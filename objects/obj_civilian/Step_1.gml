@@ -16,6 +16,7 @@ if (obj_player.num_passengers == 0) {
 		x = obj_player.x
 		y = obj_player.y
 		
+		is_picked_up = true;
 		obj_player.num_passengers = 1;
 	
 		// spawn a flag at destination
@@ -23,4 +24,3 @@ if (obj_player.num_passengers == 0) {
 	
 	}
 }
-

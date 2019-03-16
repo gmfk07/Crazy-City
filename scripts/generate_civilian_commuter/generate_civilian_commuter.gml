@@ -1,4 +1,4 @@
-//generate_commuter()
+//generate_civilian_commuter()
 //	attempts to generate a commuter, returns a boolean indicating success
 
 var buildingPair = get_random_building_pair();
@@ -26,24 +26,40 @@ with (newActor) {
 	desX = destinationX*GRID_SIZE + 0.5*GRID_SIZE;
 	desY = destinationY*GRID_SIZE + 0.5*GRID_SIZE;
 	if mp_grid_define_path(x,y, desX, desY, path){
-		// there is a path, it should be a commuter
-		show_debug_message("Placed commuter at " + string(startX) + "," + string(startY) + ".");
-		image_speed = 1;
-		pos = 1;
-		x_goto = path_get_point_x(path, pos);
-		y_goto = path_get_point_y(path, pos);
-		show_debug_message("Destination of the commuter: " + string(destination[0]) + ", " + string(destination[1]));
+		// there is a path, it should be a commuter unless there are no civilians on the map
+		// also include small chance of spawning a civilian anyway
+		if (choose(1,2,3,4) == 1 or instance_number(obj_civilian) == 0) {
+			x -= 0.5*GRID_SIZE;
+			y -= 0.5*GRID_SIZE;
+			instance_change(obj_civilian, true);
+			depth = -1;
+			show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
+			show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));	
+		} else {
+			show_debug_message("Placed commuter at " + string(startX) + "," + string(startY) + ".");
+			image_speed = 1;
+			pos = 1;
+			x_goto = path_get_point_x(path, pos);
+			y_goto = path_get_point_y(path, pos);
+			show_debug_message("Destination of the commuter: " + string(destination[0]) + ", " + string(destination[1]));
+		}
 	}
 	else{
 		//no path, a civilian
 		x -= 0.5*GRID_SIZE;
 		y -= 0.5*GRID_SIZE;
-		instance_change(obj_civilian, false);
+		instance_change(obj_civilian, true);
 		depth = -1;
 		show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
 		show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));
 	}
 	
+	// if civilian number is too low give a boost sometimes
+	if (instance_number(obj_civilian) == 1 and choose(1,2,3,4) == 1) {
+		generate_civilian_commuter();
+	} else if (choose(1,2,3,4,5,6) == 1) { // further increase spawn rates by having random chance of generating another civilian
+		generate_civilian_commuter();
+	}
 }
 
 
