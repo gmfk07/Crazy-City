@@ -1,14 +1,15 @@
 anger += anger_per_second/room_speed;
-if (anger >= angry_threshold)
+if (anger >= angry_threshold && anger < seething_threshold)
 {
 	image_index = 1;
-	rage_increase(RAGE_PER_SECOND/room_speed);
+	rage_increase(RAGE_PER_SECOND_ANGRY/room_speed);
 }
-if (anger >= seething_threshold)
+else if (anger >= seething_threshold)
 {
 	image_index = 2;
-	rage_increase(RAGE_PER_SECOND/room_speed);
+	rage_increase(RAGE_PER_SECOND_SEETHING/room_speed);
 }
+
 if (anger >= 1)
 {
 	show_debug_message("EXPLODE: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
