@@ -16,6 +16,9 @@ if (obj_player.num_passengers == 0) {
 		x = obj_player.x
 		y = obj_player.y
 		
+		image_index = 1; // the middle one
+		image_speed = 0;
+		
 		audio_play_sound(snd_pickup, 0, 0);
 		is_picked_up = true;
 		obj_player.num_passengers = 1;
