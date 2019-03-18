@@ -11,6 +11,7 @@ if (abs(destination[0] - x/GRID_SIZE) + abs(destination[1] - y/GRID_SIZE) <= 1){
 	show_debug_message("Arrived at: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
 	obj_player.num_passengers = 0;
 	rage_increase(-DELIVERY_RAGE_DECREASE);
+	audio_play_sound(snd_dropoff, 0, 0);
 	instance_destroy(obj_flag); // destroys all flags - may become an issue with multiple passengers
 	instance_destroy();
 	if (instance_number(obj_civilian) == 0) { // If out of civilians, make more
