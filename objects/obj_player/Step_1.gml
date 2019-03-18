@@ -17,3 +17,5 @@ if (x % GRID_SIZE == 0 && y % GRID_SIZE == 0 && !road_exists(x/GRID_SIZE, y/GRID
 	}
 	show_debug_message(string(x/GRID_SIZE) + " " + string(y/GRID_SIZE));
 }
+
+time += delta_time;
