@@ -27,6 +27,19 @@ for (var i=0; i<room_width/GRID_SIZE; i++)
 	}
 }
 
+//update trees in area after road and commuter destruction
+for (var i=0; i<room_width/GRID_SIZE; i++)
+{
+	for (var j=0; j<room_height/GRID_SIZE; j++)
+	{
+		if ((abs(j-gridpos_y) + abs(i-gridpos_x)) <= radius + 2)
+		{
+			update_tree(i, j);
+		}
+	}
+}
+
+
 mp_grid_add_instances(global.ai_grid,obj_rock,false);
 //rebuild all path for commuters
 with(obj_commuter)
