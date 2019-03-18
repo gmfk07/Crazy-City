@@ -1,12 +1,14 @@
 anger += anger_per_second/room_speed;
 if (anger >= angry_threshold && anger < seething_threshold)
 {
-	image_index = 1;
+	//image_index = 1; // changed to separate sprites for animation
+	sprite_index = spr_civilian_angry;
 	rage_increase(RAGE_PER_SECOND_ANGRY/room_speed);
 }
 else if (anger >= seething_threshold)
 {
-	image_index = 2;
+	//image_index = 2; // changed to separate sprites for animation
+	sprite_index = spr_civilian_furious;
 	rage_increase(RAGE_PER_SECOND_SEETHING/room_speed);
 }
 
