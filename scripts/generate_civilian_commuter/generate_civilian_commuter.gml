@@ -29,11 +29,11 @@ with (newActor) {
 		// there is a path, it should be a commuter unless there are no civilians on the map
 		// also include small chance of spawning a civilian anyway
 		if (choose(1,2,3,4) == 1 or instance_number(obj_civilian) == 0) {
+			//add a spawn effect
+			effect_create_above(ef_star, x, y, 2, c_white);
 			x -= 0.5*GRID_SIZE;
 			y -= 0.5*GRID_SIZE;
 			instance_change(obj_civilian, true);
-			//add a spawn effect
-			effect_create_above(ef_star, x, y, 2, c_white);
 			depth = -1;
 			show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
 			show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));	
@@ -48,11 +48,10 @@ with (newActor) {
 	}
 	else{
 		//no path, a civilian
-
-		x -= 0.5*GRID_SIZE;
-		y -= 0.5*GRID_SIZE;
 		//add a spawn effect
 		effect_create_above(ef_star, x, y, 2, c_white);
+		x -= 0.5*GRID_SIZE;
+		y -= 0.5*GRID_SIZE;
 		instance_change(obj_civilian, true);
 		depth = -1;
 		show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
