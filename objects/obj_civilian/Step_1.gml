@@ -16,11 +16,12 @@ if (obj_player.num_passengers == 0) {
 		x = obj_player.x
 		y = obj_player.y
 		
+		audio_play_sound(snd_pickup, 0, 0);
 		is_picked_up = true;
 		obj_player.num_passengers = 1;
 	
 		// spawn a flag at destination
 		var newFlag = instance_create_layer((destination[0]+1)*GRID_SIZE, destination[1]*GRID_SIZE, "Instances", obj_flag);
-	
+		obj_player.pickedup += 1;	
 	}
 }

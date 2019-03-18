@@ -16,7 +16,7 @@ if (x % GRID_SIZE == 0 && y % GRID_SIZE == 0 && !road_exists(x/GRID_SIZE, y/GRID
 		newroad.image_index = 1; // vertical tile
 	}
 	show_debug_message(string(x/GRID_SIZE) + " " + string(y/GRID_SIZE));
-	
+
 	// Update adjacent trees
 	var road_x = newroad.grid_x;
 	var road_y = newroad.grid_y;
@@ -29,3 +29,5 @@ if (x % GRID_SIZE == 0 && y % GRID_SIZE == 0 && !road_exists(x/GRID_SIZE, y/GRID
 	update_tree(road_x - 1, road_y + 1);
 	update_tree(road_x - 1, road_y - 1);
 }
+
+time += delta_time;

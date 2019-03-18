@@ -7,3 +7,6 @@ road_mode = true;
 audio_play_sound(snd_crazy_city, 100, true);
 image_index = 0;
 image_speed = 0;
+
+time = 0;
+pickedup = 0;

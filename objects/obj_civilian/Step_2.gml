@@ -13,6 +13,7 @@ else if (anger >= seething_threshold)
 if (anger >= 1)
 {
 	show_debug_message("EXPLODE: " + string(x/GRID_SIZE) + ", " + string(y/GRID_SIZE));
+	audio_play_sound(snd_explode, 0, 0);
 	// check if this civilian is being carried by player
 	// if so, player should have 0 passengers, flag should despawn
 	if (is_picked_up)

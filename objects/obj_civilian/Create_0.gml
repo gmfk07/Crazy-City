@@ -11,3 +11,4 @@ anger_per_second = .05;// 0.1
 image_index = 0;
 image_speed = 0;
 is_picked_up = false;
+audio_play_sound(snd_spawn, 0, 0);
