@@ -3,7 +3,8 @@ gridpos_x = argument0;
 gridpos_y = argument1;
 radius = argument2;
 
-effect_create_above(ef_explosion, (gridpos_x+0.5)*GRID_SIZE , (gridpos_y+0.5)*GRID_SIZE, 2, c_yellow);
+//add an explosion effect
+effect_create_above(ef_explosion, (gridpos_x+0.5)*GRID_SIZE , (gridpos_y+0.5)*GRID_SIZE, 2, c_red);
 for (var i=0; i<room_width/GRID_SIZE; i++)
 {
 	for (var j=0; j<room_height/GRID_SIZE; j++)

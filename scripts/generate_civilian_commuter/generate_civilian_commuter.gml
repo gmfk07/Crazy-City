@@ -25,7 +25,6 @@ with (newActor) {
 	destination[1] = destinationY;
 	desX = destinationX*GRID_SIZE + 0.5*GRID_SIZE;
 	desY = destinationY*GRID_SIZE + 0.5*GRID_SIZE;
-	effect_create_above(ef_star, x, y, 2, c_white);
 	if mp_grid_define_path(x,y, desX, desY, path){
 		// there is a path, it should be a commuter unless there are no civilians on the map
 		// also include small chance of spawning a civilian anyway
@@ -33,6 +32,8 @@ with (newActor) {
 			x -= 0.5*GRID_SIZE;
 			y -= 0.5*GRID_SIZE;
 			instance_change(obj_civilian, true);
+				//add a spawn effect
+			effect_create_above(ef_star, x, y, 2, c_white);
 			depth = -1;
 			show_debug_message("Placed civilian at " + string(startX) + "," + string(startY) + ".");
 			show_debug_message("Destination of the civilian: " + string(destination[0]) + ", " + string(destination[1]));	
