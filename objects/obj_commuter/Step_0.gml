@@ -22,7 +22,8 @@ if !((abs(obj_player.grid_x - grid_x)+abs(obj_player.grid_y - grid_y))<=1){
 	{
 		instance_destroy(self);
 	}
+	//mp_potential_step(x_goto,y_goto,6,false);
 	mp_potential_step_object(x_goto, y_goto, 1 , obj_rock);
 	var _dif = angle_difference(point_direction(x, y, x_goto, y_goto), image_angle);
-	image_angle += (_dif div 45);
+	image_angle += clamp(-3,_dif,3);
 }

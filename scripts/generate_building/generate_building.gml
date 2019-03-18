@@ -64,7 +64,6 @@ if (coinFlip < 3) {
 	
 	var newBuilding = instance_create_layer(0, 0, "Instances", obj_building);
 	with (newBuilding) {
-		position_destroy(newX*GRID_SIZE,newY*GRID_SIZE);//destroy the rock there
 		set_gridpos(newX, newY);
 	}
 	buildingSpawner.buildingLocations[newY, newX] = true;

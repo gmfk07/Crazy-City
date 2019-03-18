@@ -14,13 +14,14 @@ var _fy = argument3;
 var _path = argument4;
 
 if !mp_grid_path(global.ai_grid, _path, _sx, _sy, _fx, _fy, false)
-{
-show_debug_message("ERROR: mp_grid_define_path() - No path created"); 
-return false;
-}
+	{
+	show_debug_message("ERROR: mp_grid_define_path() - No path created"); 
+	//show_debug_message(string(_sx/GRID_SIZE)+","+string(_sy/GRID_SIZE)+" to " +string(_fx/GRID_SIZE)+","+string(_fy/GRID_SIZE));
+	return false;
+	}
 else
-{
-path_set_kind(_path, 1);
-path_set_precision(_path, 8);
-return true;
-}
+	{
+	path_set_kind(_path, 1);
+	path_set_precision(_path, 8);
+	return true;
+	}
