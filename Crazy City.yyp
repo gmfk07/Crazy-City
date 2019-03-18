@@ -628,6 +628,25 @@
             }
         },
         {
+            "Key": "71b5ace6-b160-490f-8169-04c10c5c3add",
+            "Value": {
+                "id": "33c9d0a5-71d3-48a9-9fcf-3c55146b4263",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tree\/spr_tree.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "73bf19f5-040e-4862-84ad-cdfc2bfb01b6",
             "Value": {
                 "id": "172f8b80-5e1d-4cdd-aa6d-6e2a608fa39d",
@@ -1084,6 +1103,25 @@
             }
         },
         {
+            "Key": "b79d1944-54f6-4d5e-984c-eb4cdb630d97",
+            "Value": {
+                "id": "71e80ef3-080a-4f74-9eb8-04f38e190eb4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/rock_exists\/rock_exists.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b9a5821a-12a4-4e94-9dbe-97dd4281084b",
             "Value": {
                 "id": "3b0bc881-2877-4c39-93d5-e4effe7fa500",
@@ -1157,6 +1195,25 @@
                 ],
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cdad949d-0918-4bd9-a3e1-35d9012d7407",
+            "Value": {
+                "id": "bf7221d3-7567-4ca0-b77f-0e6d3cd6135f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/update_tree\/update_tree.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1271,6 +1328,25 @@
                 ],
                 "resourcePath": "sprites\/spr_bank\/spr_bank.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d96460f3-c5f1-40f7-b6d1-45258783d94b",
+            "Value": {
+                "id": "3278a234-b10d-4040-a6ee-f5d6d2c2251b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/get_rock\/get_rock.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1491,6 +1567,8 @@
         "67979051-271c-4095-af77-64fa37647d60",
         "b9a5821a-12a4-4e94-9dbe-97dd4281084b",
         "e79db2f5-1754-4faf-bdd3-7006f54ace23",
+        "b79d1944-54f6-4d5e-984c-eb4cdb630d97",
+        "d96460f3-c5f1-40f7-b6d1-45258783d94b",
         "741fcc7d-65a1-4fdf-904e-c9bfeaa905d2",
         "b74f0133-9b7f-436e-ae5a-024b0041f543",
         "7c5fe851-29a1-4a48-9f54-883ca56e267a",
@@ -1498,7 +1576,8 @@
         "50d05520-2db8-47d2-9209-d96dc7baf7e3",
         "8e3adafc-f16f-4e68-90c2-ae9e94199770",
         "ef249657-d8f7-48c6-9c8b-1945d5449dc3",
-        "ce4a5dcd-4daf-4682-8fa3-1274f4169b1a"
+        "ce4a5dcd-4daf-4682-8fa3-1274f4169b1a",
+        "cdad949d-0918-4bd9-a3e1-35d9012d7407"
     ],
     "tutorial": ""
 }
