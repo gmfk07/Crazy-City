@@ -26,9 +26,10 @@ with (newActor) {
 	desX = destinationX*GRID_SIZE + 0.5*GRID_SIZE;
 	desY = destinationY*GRID_SIZE + 0.5*GRID_SIZE;
 	if mp_grid_define_path(x,y, desX, desY, path){
+		show_debug_message("there should be a connected pair!");
 		// there is a path, it should be a commuter unless there are no civilians on the map
 		// also include small chance of spawning a civilian anyway
-		if (choose(1,2,3,4) == 1 or instance_number(obj_civilian) == 0) {
+		if (instance_number(obj_civilian) == 0 or choose(1,2,3,4) == 1) {
 			//add a spawn effect
 			effect_create_above(ef_star, x, y, 2, c_white);
 			x -= 0.5*GRID_SIZE;
@@ -40,6 +41,7 @@ with (newActor) {
 		} else {
 			show_debug_message("Placed commuter at " + string(startX) + "," + string(startY) + ".");
 			image_speed = 1;
+			depth = -1;
 			pos = 1;
 			x_goto = path_get_point_x(path, pos);
 			y_goto = path_get_point_y(path, pos);

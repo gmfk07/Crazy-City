@@ -17,5 +17,6 @@ mode_icon = instance_create_layer(room_width - GRID_SIZE - 6, room_height - GRID
 mode_icon.image_speed = 0;
 
 //create an after image
+after_image_speed = 1;
 instance_create_depth(x, y, depth, obj_afterimage);
-alarm[0] = room_speed / 12; //Another arbitrary number, this would generate the afterimage 2 times per second
+alarm[0] = room_speed / after_image_speed; //Another arbitrary number, this would generate the afterimage 2 times per second
